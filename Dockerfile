@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM python:3.4-alpine
 
 RUN apk add --no-cache curl
 
