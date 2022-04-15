@@ -1,9 +1,12 @@
-name: build
+name: Trivy CVE Dependency Scanner
+
 on:
   push:
-    branches:
-      - master
+    branches: [main]
   pull_request:
+    branches: [main]
+  # allow reuse of this workflow in other repos
+  workflow_call:
 jobs:
   build:
     name: Build
